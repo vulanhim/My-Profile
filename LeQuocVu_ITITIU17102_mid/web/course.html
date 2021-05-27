@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Course</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "stylecourse.css">
+        <link rel = "stylesheet" href = "stylebar.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="LoginPage.jsp">Login</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <script>
+            var scroll1 = window.pageYOffset;
+            window.onscroll = function () {
+                var scroll2 = window.pageYOffset;
+                if (scroll1 > scroll2) {
+                    document.querySelector('nav').style.top = "0";
+                } else {
+                    document.querySelector('nav').style.top = "-100px";
+                }
+                scroll1 = scroll2;
+            };
+        </script>
+        <center><h1>List of my course</h1></center>
+        <center><h2>Majors: Computer Science</h2></center>
+        <div class="container">     
+            <div class="comp">
+                <br><h3>Completed</h3>
+                <div class="task">Algorithms & Data Structures</div>
+                <div class="task">Introduction to Computing</div>
+                <div class="task">Digital Logic Design</div>
+                <div class="task">Digital Logic Design Laboratory</div>
+                <div class="task">Object-Oriented Programming</div>
+                <div class="task">Computer Architecture</div>
+                <div class="task">Object-Oriented Analysis and Design</div>
+                <div class="task">Computer Networks</div>
+                <div class="task">C/C++ Programming in Unix</div>
+                <div class="task">Calculus 1</div>
+                <div class="task">Calculus 2</div>
+                <div class="task">Calculus 3</div>
+                <div class="task">Discrete Mathematics</div>
+                <div class="task">Probability, Statistic & Random Process</div>
+                <div class="task">Critical Thinking</div>
+                <div class="task">Ho Chi Minh's Thoughts</div>
+                <div class="task">Chemistry for Engineers</div>
+                <div class="task">Physics 1</div>
+                <div class="task">Physics 2</div>
+                <div class="task">Physics 3</div>
+                <div class="task">Physics 3 Laboratory</div>
+                <div class="task">Physics 4</div>
+                <div class="task">Physical Training 1</div>
+                <div class="task">Physical Training 2</div>
+            </div>
+            <div class="notcomp">
+                <br><h3>Not completed</h3>
+                <div class="task">Principles of Database Management</div>
+                <div class="task">Principles of Programming Languages</div>
+                <div class="task">Web Application Development</div>
+                <div class="task">Introduction to Artificial Intelligence</div>
+                <div class="task">Operating Systems</div>
+                <div class="task">Theoretical Models in Computing</div>
+                <div class="task">Software Engineering</div>
+                <div class="task">Chemistry Laboratory</div>
+                <div class="task">Writing AE1</div>
+                <div class="task">Listening AE1</div>
+                <div class="task">Writing AE2</div>
+                <div class="task">Speaking AE2</div>
+                <div class="task">Principles of Marxism</div>
+                <div class="task">Revolutionary Lines of Vietnamese Communist Party</div>
+                <div class="task">Internship</div>
+                <div class="task">Special Study of the Field</div>
+                <div class="task">Entrepreneurship</div>
+                <div class="task">Thesis</div>
+                <div class="task">Computer Graphics</div>
+                <div class="task">Mobile Application Development</div>
+                <div class="task">Digital Image Processing</div>
+            </div>
+        </div>
+    </body>
+</html>

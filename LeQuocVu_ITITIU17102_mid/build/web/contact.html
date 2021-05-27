@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Contact</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "stylecontact.css">
+        <link rel = "stylesheet" href = "stylebar.css">
+        <script src="https://kit.fontawesome.com/7c428afa8c.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="LoginPage.jsp">Login</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="course.html">Majors</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+            </ul>
+        </nav>
+        <script>
+            var scroll1 = window.pageYOffset;
+            window.onscroll = function () {
+                var scroll2 = window.pageYOffset;
+                if (scroll1 > scroll2) {
+                    document.querySelector('nav').style.top = "0";
+                } else {
+                    document.querySelector('nav').style.top = "-100px";
+                }
+                scroll1 = scroll2;
+            };
+        </script>
+        <h1>Contact me on: </h1>
+        <p>
+            0924440076<br>
+            vulanhim@gmail.com
+        </p>
+        <div class="middle">
+            <a class="btn" href="https://www.facebook.com/vbenstar">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="btn" href="https://www.instagram.com/vulanhim">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a class="btn" href="https://www.youtube.com/user/vulanhim2">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a class="btn" href="https://twitter.com/vbenstar">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+    </body>
+</html>

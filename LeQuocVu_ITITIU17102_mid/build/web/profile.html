@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Profile</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "styleprofile.css">
+        <link rel = "stylesheet" href = "stylebar.css">
+    </head>
+    <body>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="LoginPage.jsp">Login</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="course.html">Majors</a></li>
+                    <li><a href="hobbies.html">Hobbies</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <script>
+                var scroll1 = window.pageYOffset;
+                window.onscroll = function () {
+                    var scroll2 = window.pageYOffset;
+                    if (scroll1 > scroll2) {
+                        document.querySelector('nav').style.top = "0";
+                    } else {
+                        document.querySelector('nav').style.top = "-100px";
+                    }
+                    scroll1 = scroll2;
+                };
+            </script>
+        </div>
+        <div class="box">
+            <img src="pic/5.jpg" alt="" class="box-img">
+            <h1 class="box-text">Le Quoc Vu</h1>
+            <p class="box-text">
+                Nickname: Ben<br>
+                Gender: Male<br>
+                Date of Birth: 06-01-1999<br>
+                Live in: Bien Hoa<br>
+                Study at: International University<br>
+                Majors: CSE<br>
+                Inspirit quotes: Your time is limited, so don't waste it living someone else's life.
+                Don't be trapped by dogma, which is living with the results of other people's thinking.
+                Don't let the noise of others's opinions drown out of your own inner voice.
+                And most important, have the courage to follow your heart and intuition - Steve Jobs.
+            </p>
+        </div>
+    </body>
+</html>

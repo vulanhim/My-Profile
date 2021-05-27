@@ -1,0 +1,64 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 23, 2020, 7:03:34 PM
+    Author     : LeeBen
+*/
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+td {
+    border: 2px solid #3498db;
+}
+body{
+    font-family: cursive;
+    background: black;
+    color: white;
+}
+.box{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    text-align: center;
+    border: 2px solid #660099;
+    border-radius: 24px;
+}
+.box input[type = "text"], .box input[type = "password"]{
+    border: 0;
+    background: none;
+    text-align: center;
+    width: 200px;
+    outline: none;
+    color: white;
+}
+.box input[type = "submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 5px auto;
+    text-align: center;
+    font-family: cursive;
+    border: 2px solid #660099;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.box input[type = "submit"]:hover{
+    background: #660099;
+}

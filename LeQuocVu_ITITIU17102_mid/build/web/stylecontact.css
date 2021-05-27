@@ -1,0 +1,92 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 24, 2020, 5:19:43 AM
+    Author     : LeeBen
+*/
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: cursive;
+}
+h1{
+    text-align: center;
+    color: #3498db;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+p{
+    text-align: center;
+    color: #3498db;
+    position: absolute;
+    top: 90%;
+    transform: translateY(-50%);
+    width: 100%;
+    font-family: cursive;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background: black;
+}
+.middle{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+.btn{
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background: #f1f1f1;
+    margin: 10px;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #f1f1f1;
+    color: #3498db;
+    overflow: hidden;
+    position: relative;
+}
+.btn i{
+    line-height: 90px;
+    font-size: 35px;
+    transition: 0.2s linear;
+}
+.btn:hover i{
+    transform: scale(1.3);
+    color: #f1f1f1;
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #3498db;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+}
+.btn:hover::before{
+    animation: baam 0.7s 1;
+    top: -10%;
+    left: -10%;
+}
+@keyframes baam {
+    0%{
+        top: 90%;
+        left: -110%;
+    }50%{
+        top: -30%;
+        left: 10%;
+    }100%{
+        top: -10%;
+        left: -10%;
+    }
+}

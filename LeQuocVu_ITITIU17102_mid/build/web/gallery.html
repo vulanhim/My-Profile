@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Gallery</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "stylegallery.css">
+        <link rel = "stylesheet" href = "stylebar.css">
+    </head>
+    <body>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="LoginPage.jsp">Login</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="course.html">Majors</a></li>
+                    <li><a href="hobbies.html">Hobbies</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <script>
+                var scroll1 = window.pageYOffset;
+                window.onscroll = function () {
+                    var scroll2 = window.pageYOffset;
+                    if (scroll1 > scroll2) {
+                        document.querySelector('nav').style.top = "0";
+                    } else {
+                        document.querySelector('nav').style.top = "-100px";
+                    }
+                    scroll1 = scroll2;
+                };
+            </script>
+        </div>
+        <div class="gallery">
+            <h1>Ben's Gallery</h1>
+            <a href="pic/7.jpg"><img src ="pic/7.jpg" alt=""></a>
+            <a href="pic/8.jpg"><img src ="pic/8.jpg" alt=""></a>
+            <a href="pic/6.jpg"><img src ="pic/6.jpg" alt=""></a>
+            <a href="pic/10.jpg"><img src ="pic/10.jpg" alt=""></a>
+            <a href="pic/12.jpg"><img src ="pic/12.jpg" alt=""></a>
+            <a href="pic/11.jpg"><img src ="pic/11.jpg" alt=""></a>
+            <a href="pic/9.jpg"><img src ="pic/9.jpg" alt=""></a>
+            <a href="pic/13.jpg"><img src ="pic/13.jpg" alt=""></a>
+            <a href="pic/14.jpg"><img src ="pic/14.jpg" alt=""></a>
+            <a href="pic/15.jpg"><img src ="pic/15.jpg" alt=""></a>
+            <a href="pic/16.jpg"><img src ="pic/16.jpg" alt=""></a>
+            <a href="pic/17.jpg"><img src ="pic/17.jpg" alt=""></a>
+        </div>
+    </body>
+</html>
